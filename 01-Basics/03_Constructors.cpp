@@ -4,23 +4,26 @@ using namespace std;
 class Car
 {
 public:
-	string name;
+	string name;            //data members
 	string brand;
 	string colour;
 	double price;
 
-    //Car() {}       //default constructor
+    //Car() {}       //member function (default constructor)
 
-    Car(string n, string b, string c, double p)     //parameterized constructor
+    Car(string n, string b, string c, double p)     //member function (constructor) with parameters (parameterized constructor)
     {
         name=n;
         brand=b;
         colour=c;
         price=p;
     }
+
+    /*ENCAPSULATION: It is the process of wrapping data members and member functions 
+    into a single unit called class.*/
 };
 
-void print(Car c)
+void print(Car c)                           
 {
 	cout<<" "<<c.name<<" "<<c.brand<<" "<<c.colour<<" "<<c.price<<endl;
 

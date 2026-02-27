@@ -13,7 +13,10 @@ class Vehicle
         {
             brand = b;                      // No need to use "this" here since there is no naming conflict
             this->model = model;            //"this" is a pointer to the current object, used to resolve naming conflicts
-            this->year = year;
+            this->year = year;              
+                                            /*DATA HIDING: It hides the internal representation of the object and only exposes 
+                                            a public interface to interact with it. Here, the member variables (brand, model, year) 
+                                            are private and cannot be accessed directly from outside the class.*/
         }
 
         void displayInfo()
